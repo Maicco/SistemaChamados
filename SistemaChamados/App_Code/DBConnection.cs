@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 /// </summary>
 public class DBConnection
 {
-    private const string connectionString = "Data Source=192.168.24.5;Initial Catalog=TesteDB;User ID=sa;Password=Cr3c15p";
+    string connectionString = "Data Source=192.168.24.5;Initial Catalog=TesteDB;User ID=sa;Password=Cr3c15p";
 
     public DBConnection()
     {
