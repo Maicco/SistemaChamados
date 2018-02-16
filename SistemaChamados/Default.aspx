@@ -19,7 +19,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Categorias</a>
                     </li>
                     <li class="nav-item">
@@ -30,7 +30,7 @@
                     <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
                     <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
                     <asp:TextBox ID="searchTextBox" Text="" Placeholder="Buscar" CssClass="form-control mr-sm-2" runat="server" />
-                    <asp:Button Text="Buscar" ID="searchButton" CssClass="btn btn-outline-success my-2 my-sm-0" OnClick="searchButton_Click" runat="server" />
+                    <asp:Button Text="Buscar" ID="searchButton" CssClass="common-button my-2 my-sm-0" OnClick="searchButton_Click" runat="server" />
                 </div>
             </div>
         </nav>
@@ -44,7 +44,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="first-slide" src="Imagens/1.png" alt="First slide" style="width:100%; height:auto; max-height:500px; min-height:400px;"/>
+                    <img class="first-slide" src="Imagens/1.png" alt="First slide" style="width: 100%; height: auto; max-height: 500px; min-height: 400px;" />
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <div class="text-shadow">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="second-slide" src="Imagens/2.png" alt="Second slide" style="width:100%; height:auto; max-height:500px; min-height:400px;"/>
+                    <img class="second-slide" src="Imagens/2.png" alt="Second slide" style="width: 100%; height: auto; max-height: 500px; min-height: 400px;" />
                     <div class="container">
                         <div class="carousel-caption">
                             <div class="text-shadow">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="third-slide" src="Imagens/3.png" alt="Third slide" style="width:100%; height:auto; max-height:500px; min-height:400px;"/>
+                    <img class="third-slide" src="Imagens/3.png" alt="Third slide" style="width: 100%; height: auto; max-height: 500px; min-height: 400px;" />
                     <div class="container">
                         <div class="carousel-caption text-right">
                             <div class="text-shadow">
@@ -92,7 +92,10 @@
         <!-- Fim Carousel -->
         <main role="main" class="container">
             <div>
-                <p>Hello World!</p>
+                <asp:Button ID="testeButton" Text="Teste" OnClick="Teste_Click" runat="server" />
+                <br />
+                <br />
+                <asp:Label ID="testeLabel" Text="" runat="server" />
             </div>
         </main>
     </form>
