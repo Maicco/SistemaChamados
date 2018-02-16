@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
+    <title>Sistema de Chamados - CRECISP</title>    
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/custom-layout.css" rel="stylesheet" />
 </head>
@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
         <!-- Inicio Navbar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="Default.aspx">CRECI<span style="color: red;">SP</span></a>
+            <div class="navbar-title"><a class="navbar-brand" href="Default.aspx">CRECI<span style="color: red;">SP</span></a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,7 +51,7 @@
                                 <h1>Imagem 1</h1>
                                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             </div>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Botão 1</a></p>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                                 <h1>Imagem 2</h1>
                                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             </div>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Botão 2</a></p>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                                 <h1>Imagem 3</h1>
                                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             </div>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Botão 3</a></p>
                         </div>
                     </div>
                 </div>
@@ -92,10 +92,7 @@
         <!-- Fim Carousel -->
         <main role="main" class="container">
             <div>
-                <asp:Button ID="testeButton" Text="Teste" OnClick="Teste_Click" runat="server" />
-                <br />
-                <br />
-                <asp:Label ID="testeLabel" Text="" runat="server" />
+                <asp:Label ID="contentLabel" Text="" runat="server" />
             </div>
         </main>
     </form>

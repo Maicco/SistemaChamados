@@ -1,6 +1,6 @@
 ﻿body {
-    min-height: 75rem;
-    padding-top: 4.5rem;
+    /*min-height: 75rem;
+    padding-top: 4.5rem;*/
 }
 
 .text-shadow{
@@ -63,4 +63,14 @@
         left: 0;
         min-width: 100%;
         height: 32rem;
+    }
+
+.navbar-title {
+    font-weight: bold;
+    color: #d9d9d9;
+}
+
+    .navbar-title:hover {        
+        color: #fff;
+        text-shadow: 1px 1px #666;
     }

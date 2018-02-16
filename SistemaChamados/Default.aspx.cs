@@ -11,11 +11,4 @@ public partial class _Default : System.Web.UI.Page
     {
 
     }
-
-    protected void Teste_Click(object sender, EventArgs e)
-    {
-        DBConnection db = new DBConnection();
-
-        testeLabel.Text = db.SelectAllData();
-    }
 }
